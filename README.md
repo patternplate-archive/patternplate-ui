@@ -1,0 +1,31 @@
+# Patternplate UI
+
+This is the home of Patternplates next UI elements. The idea is a recursive strategy by documenting Patternplates UI in itself.
+
+## Stages
+- **Stage 1:** Concept
+	- Structure
+		- Navigation (In Progress)
+		- Header
+		- Pluginarea
+		-	Settings
+		- Pattern
+	- Functionalities
+		- Narrowing navigation
+		- Dark mode
+		- Build download
+- **Stage 2:** Design
+	- UI
+		- Function buttons
+		- Toolbars
+	- Frame
+		- Navigation
+		- Header
+		- Pluginarea
+		-	Settings
+		- Pattern
+- **Stage 3:** Build it!
+	- Setup patternplate project
+	- Build components
+
+**Note: Stage 2+3 can run simultaneously**
