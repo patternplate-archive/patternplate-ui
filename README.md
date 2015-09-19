@@ -26,6 +26,7 @@ This is the home of Patternplates next UI elements. The idea is a recursive stra
 		- Pattern ✓
 - **Stage 3:** Build it!
 	- Setup patternplate project
+	- Build Frame [Prove of Concept](http://codepen.io/daniel_gooss/pen/PPwGML?editors=110)
 	- Build components
 
 **Note: Stage 2+3 can run simultaneously**

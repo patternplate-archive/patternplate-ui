@@ -1,0 +1,54 @@
+@import 'Pattern';
+
+body {
+	font-family: Verdana;
+}
+
+h2 {
+	font-weight: normal;
+}
+
+.color-swatch {
+	margin-bottom: 8px;
+	font-family: sans-serif;
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	border: 2px solid fade(black, 30%);
+	margin-right: 1em;
+	margin-bottom: 1em;
+	vertical-align: top;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	.name {
+		font-size: 11px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		max-width: 100%;
+	}
+
+	.code {
+		text-transform: uppercase;
+	}
+
+	@colors: pp-white, pp-gray-light, pp-gray-medium, pp-gray-dark, pp-blue;
+
+	.loop(@i: length(@colors)) when (@i > 0) {
+		@name: extract(@colors, @i);
+
+		@color: @@name;
+
+		&.@{name} {
+			background: @color;
+			color: fade(contrast(@color), 70%);
+
+			.code:after { content: "@{color}"; }
+		  }
+
+		.loop((@i - 1));
+	} .loop;
+}

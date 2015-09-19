@@ -6,26 +6,26 @@ Object.defineProperty(exports, '__esModule', {
 
 var ui = {
 	'hierarchy': {
-		'globals': {
+		'01_globals': {
 			'displayName': 'Globals'
 		},
-		'atoms': {
+		'02_atoms': {
 			'displayName': 'Atoms'
 		},
-		'molecules': {
+		'03_molecules': {
 			'displayName': 'Molecules'
 		},
-		'modules': {
+		'04_modules': {
 			'displayName': 'Organisms',
 			'order': 4,
 			'icon': 'modules'
 		},
-		'pages': {
+		'05_templates': {
 			'displayName': 'Templates',
 			'order': 5,
 			'icon': 'pages'
 		},
-		'pages': {
+		'06_pages': {
 			'displayName': 'Pages',
 			'order': 6,
 			'icon': 'pages'
