@@ -1,0 +1,23 @@
+{
+  "name": "patternplate-ui",
+  "version": "0.1.0",
+  "description": "UI Libraray for patternplate ",
+  "main": "index.js",
+  "scripts": {
+    "start": "patternplate",
+    "console": "patternplate-console",
+    "build": "npm run console build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.sinnerschrader.com:patternplate/patternplate-ui.git"
+  },
+  "keywords": [
+    "patternplate"
+  ],
+  "author": "Daniel Gooß",
+  "license": "MIT",
+  "dependencies": {
+    "patternplate": "^0.13.1"
+  }
+}
