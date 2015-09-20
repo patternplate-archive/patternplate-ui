@@ -18,6 +18,6 @@
   "author": "Daniel Gooß",
   "license": "MIT",
   "dependencies": {
-    "patternplate": "^0.13.1"
+    "patternplate": "*"
   }
 }
