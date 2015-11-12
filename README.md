@@ -17,6 +17,8 @@ This is the home of Patternplates next UI elements. The idea is a recursive stra
 - **Stage 2:** Design
 	- UI
 		- Function buttons ✓
+		- Primary button
+		- New meta labels
 		- Toolbars ✓
 	- Frame
 		- Navigation ✓
@@ -34,3 +36,11 @@ This is the home of Patternplates next UI elements. The idea is a recursive stra
 ## Design status
 
 ![](layouts/design/pattern_20150819.png)
+
+
+## UI Ideas
+
+* Priority Plus Pattern for toolbars with swiping elements
+	* Elements are located in overlay and move out if place is given.
+	* By selecting hidden icon overlay gets closed and icon pushes visible icons from right - last icon moves to overlay
+* Probably handles for frames resizing
