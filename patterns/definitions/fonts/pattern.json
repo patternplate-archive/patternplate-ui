@@ -1,7 +1,8 @@
 {
 	"name": "fonts",
+	"displayName": "Fonts",
 	"version": "0.1.0",
 	"patterns": {
-		"colors": "01_globals/colors"
+		"colors": "definitions/colors"
 	}
 }

@@ -6,32 +6,20 @@ Object.defineProperty(exports, '__esModule', {
 
 var ui = {
 	'hierarchy': {
-		'01_globals': {
-			'displayName': 'Globals'
+		'definitions': {
+			'displayName': 'Definitions',
+			'icon': 'globals',
+			'order': 1
 		},
-		'02_atoms': {
-			'displayName': 'Atoms'
+		'habitats': {
+			'displayName': 'Habitats',
+			'icon': 'globals',
+			'order': 2
 		},
-		'03_molecules': {
-			'displayName': 'Molecules'
-		},
-		'04_modules': {
-			'displayName': 'Organisms',
-			'order': 4,
-			'icon': 'modules'
-		},
-		'05_templates': {
-			'displayName': 'Templates',
-			'order': 5,
-			'icon': 'pages'
-		},
-		'06_pages': {
-			'displayName': 'Pages',
-			'order': 6,
-			'icon': 'pages'
+		'atoms': {
+			'order': 3
 		}
 	},
-
 	'resultOrder': ['Markup', 'Script', 'Style', 'Documentation'],
 	'results': {
 		'Documentation': {
@@ -46,13 +34,7 @@ var ui = {
 		'Style': {
 			'use': 'source'
 		}
-	},
-	'fullscreenPatterns': [
-		'^pages/'
-	],
-	'theme': 'light',
-	'themeTarget': 'dark',
-	'useFolderTable': true
+	}
 };
 
 exports['default'] = ui;

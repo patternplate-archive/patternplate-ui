@@ -10,13 +10,23 @@ var obj = {
 	},
 	'react-to-markup': {
 		'opts': {
-			'stage': 0
+			'stage': 0,
+			'automount': true
 		}
 	},
 	'react': {
 		'opts': {
 			'stage': 0
 		}
+	},
+	'cssmodules': {
+		
+	},
+	'cssmodules-symbols': {
+		
+	},
+	'postcss': {
+		
 	}
 };
 
