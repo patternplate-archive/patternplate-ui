@@ -1,0 +1,7 @@
+{
+	"name": "header",
+	"displayName": "Header",
+	"patterns": {
+		"root": "01_globals/root"
+	}
+}
