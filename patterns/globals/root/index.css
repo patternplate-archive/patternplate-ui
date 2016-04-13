@@ -1,0 +1,19 @@
+@import 'normalize.css';
+@import 'colors';
+@import 'fonts';
+
+:root {
+}
+
+html {
+	font-size: var(--pp-base-font-size);
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	@apply --base-font;
+}

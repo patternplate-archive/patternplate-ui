@@ -1,0 +1,10 @@
+{
+	"name": "root",
+	"displayName": "Root",
+	"version": "0.1.0",
+	"patterns": {
+		"colors": "globals/colors",
+		"fonts": "globals/fonts"
+	},
+	"tags": ["definition"]
+}

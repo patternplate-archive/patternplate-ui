@@ -1,0 +1,20 @@
+{
+  "root": true,
+  "extends": ["xo/esnext", "xo-react"],
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "comments": 100,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "tabWidth": 2
+      }
+    ]
+  }
+}

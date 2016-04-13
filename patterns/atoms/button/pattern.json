@@ -1,9 +1,9 @@
 {
-  "name": "button",
+	"name": "button",
 	"displayName": "Button",
-  "version": "0.1.0",
-  "pattern": {
-     "root": "habitats/root",
-     "colors": "globals/colors"
-  }
+	"version": "0.1.0",
+	"patterns": {
+		"root": "01_globals/root",
+		"icon": "02_atoms/icon"
+	}
 }

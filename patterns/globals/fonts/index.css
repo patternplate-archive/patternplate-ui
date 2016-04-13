@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+
+:root {
+	--pp-base-font-size: 14px;
+	--pp-base-font-family: 'Roboto';
+	--pp-base-font-weight: 400;
+	--pp-highlight-font-weight: 500;
+
+	--common-ligatures: {
+		/* Enabling common/standard ligatures and disabling discretionary ligatures */
+		font-variant-ligatures: common-ligatures;
+		font-feature-settings: "liga", "clig", "dlig" 0;
+	}
+
+	--no-ligatures: {
+		/* Disabling all ligature types */
+		font-variant-ligatures: no-common-ligatures;
+		font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
+	}
+
+	--base-font: {
+		@apply --common-ligatures;
+		font-family: var(--pp-base-font-family);
+		font-weight: var(--pp-base-font-weight);
+		font-size: 1rem;
+		line-height: 1.5em;
+		color: var(--pp-text-color);
+	}
+}
