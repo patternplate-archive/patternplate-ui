@@ -10,12 +10,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.sinnerschrader.com:patternplate/patternplate-ui.git"
+    "url": "https://github.com/sinnerschrader/patternplate-ui.git"
   },
   "keywords": [
     "patternplate"
   ],
-  "author": "Daniel Gooß",
+  "author": "Sinnerschrader Deutschland GmbH",
+  "contributors": [
+		{
+			"name": "Daniel Gooß",
+			"email": "daniel.gooss@sinnerschrader.com"
+		},
+		{
+			"name": "Mario Nebl",
+			"email": "mario.nebl@sinnerschrader.com"
+		}
+	],
   "license": "MIT",
   "dependencies": {
     "patternplate": "*",
