@@ -4,7 +4,6 @@ import Pattern from 'Pattern';
 <div className="pp-container">
 	<h2 className="pp-h2">Primary Colors Blue</h2>
 	<ul className="pp-colorlist">
-		<Pattern className="pp-colorswatch" color="pp-blue-5"/>
 		<Pattern className="pp-colorswatch" color="pp-blue-25"/>
 		<Pattern className="pp-colorswatch" color="pp-blue-50"/>
 		<Pattern className="pp-colorswatch" color="pp-blue-100"/>
