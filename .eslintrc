@@ -6,6 +6,7 @@
     "document": true
   },
   "rules": {
+    "react/jsx-closing-bracket-location": [2, "tag-aligned"],
     "max-len": [
       "error",
       {

@@ -1,4 +1,4 @@
-var classnames = require('classnames');
+var joinClassnames = require('classnames');
 
 let {
 	size = 24,
@@ -14,7 +14,7 @@ width = width || size;
 
 var innerHTML = {__html: `<use xlink:href="${file}#${name}" width="100%" height="100%" fill="currentColor"></use>`};
 
-var cls = classnames(
+var cls = joinClassnames(
 	'icon',
 	name,
 	className

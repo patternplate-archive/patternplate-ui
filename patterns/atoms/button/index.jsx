@@ -1,6 +1,6 @@
 const React = require('react');
 const Icon = require('icon');
-const classnames = require('classnames');
+const joinClassnames = require('classnames');
 
 export class Button extends React.Component {
 	static propTypes = {
@@ -38,7 +38,7 @@ export class Button extends React.Component {
 			this.props.iconLeft ||
 			this.props.iconRight) && !this.props.text && !this.props.children;
 
-		const cls = classnames(
+		const cls = joinClassnames(
 			this.props.className,
 			'button',
 			this.props.inactive ? 'inactive' : 'active',
