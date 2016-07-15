@@ -1,0 +1,15 @@
+@import 'root';
+
+.section {
+	@apply --grid-wrapper;
+	padding: var(--grid-vertical-gutter) 0;
+	&--default {
+		background-color: var(--pp-white);
+	}
+	&--highlight {
+		background-color: var(--pp-highlight-color);
+	}
+	&--secondary {
+		background-color: var(--pp-gray-light);
+	}
+}
