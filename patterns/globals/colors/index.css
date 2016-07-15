@@ -1,11 +1,10 @@
 :root {
-	--pp-white: #FFF;
-	--pp-gray-light: #ECEFF1;
-	--pp-gray-medium: #CFD8DC;
-	--pp-gray-dark: #607D8B;
-	--pp-blue-25: #d0e8fc;
-	--pp-blue-50: #a0d2fa;
-	--pp-blue-100: #42A5F5;
+	--pp-white: rgb(255, 255, 255);
+	--pp-gray-light: rgb(236, 239,241);
+	--pp-gray-dark: rgb(96, 125, 139);
+	--pp-blue-25: rgb(208, 232, 252);
+	--pp-blue-50: rgb(160, 210, 250);
+	--pp-blue-100: rgb(66, 165, 245);
 
 	--pp-text-color: var(--pp-gray-dark);
 	--pp-border-color: var(--pp-gray-light);
