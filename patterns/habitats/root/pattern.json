@@ -1,9 +1,0 @@
-{
-	"name": "root",
-	"displayName": "Root",
-	"version": "0.1.0",
-	"patterns": {
-		"colors": "definitions/colors",
-		"fonts": "definitions/fonts"
-	}
-}

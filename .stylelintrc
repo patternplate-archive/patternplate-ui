@@ -1,26 +1,3 @@
 {
-	"extends": ["stylelint-config-standard"],
-	"rules": {
-		"indentation": "tab",
-		"function-comma-space-after": null,
-		"unit-blacklist": ["rem"],
-		"declaration-no-important": [null, {
-			severity: "warning"
-		}],
-		"value-no-vendor-prefix": true,
-		"selector-no-vendor-prefix": true,
-		"selector-no-attribute": [null, {
-			severity: "warning"
-		}],
-		"selector-no-type": [null, {
-			severity: "warning"
-		}],
-		"selector-no-id": true,
-		"selector-root-no-composition": true,
-		"selector-type-case": "lower",
-		"root-no-standard-properties": true,
-		"no-invalid-double-slash-comments": true,
-		"function-url-quotes": null,
-		"function-whitespace-after": null
-	}
+	"extends": ["stylelint-config-standard"]
 }

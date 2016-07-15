@@ -1,8 +1,0 @@
-{
-	"name": "fonts",
-	"displayName": "Fonts",
-	"version": "0.1.0",
-	"patterns": {
-		"colors": "definitions/colors"
-	}
-}

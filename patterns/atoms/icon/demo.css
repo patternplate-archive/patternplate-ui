@@ -31,7 +31,7 @@ ul.demo-icons {
 		}
 
 		&:hover {
-			color: @pp-hightlight-color;
+			color: var(--pp-hightlight-color);
 		}
 	}
 }

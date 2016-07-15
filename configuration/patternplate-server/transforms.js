@@ -17,15 +17,9 @@ module.exports = {
 		}
 	},
 	'react-to-markup': {
-<<<<<<< 12ed9a25beefaa483ddc1a1ca8e8b064bb3c490c
-		'opts': {
-			'stage': 0,
-			'automount': true
-=======
 		opts: {
 			stage: 0,
 			automount: false
->>>>>>> feat(build): New setup with postcss
 		}
 	},
 	postcss: {
@@ -54,14 +48,5 @@ module.exports = {
 				}
 			}
 		}
-	},
-	'cssmodules': {
-		
-	},
-	'cssmodules-symbols': {
-		
-	},
-	'postcss': {
-		
 	}
 };

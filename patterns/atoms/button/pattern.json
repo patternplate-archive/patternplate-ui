@@ -3,7 +3,7 @@
 	"displayName": "Button",
 	"version": "0.1.0",
 	"patterns": {
-		"root": "01_globals/root",
-		"icon": "02_atoms/icon"
+		"root": "globals/root",
+		"icon": "atoms/icon"
 	}
 }

@@ -1,42 +1,3 @@
-<<<<<<< 12ed9a25beefaa483ddc1a1ca8e8b064bb3c490c
-'use strict';
-
-Object.defineProperty(exports, '__esModule', {
-	value: true
-});
-
-var ui = {
-	'hierarchy': {
-		'definitions': {
-			'displayName': 'Definitions',
-			'icon': 'globals',
-			'order': 1
-		},
-		'habitats': {
-			'displayName': 'Habitats',
-			'icon': 'globals',
-			'order': 2
-		},
-		'atoms': {
-			'order': 3
-		}
-	},
-	'resultOrder': ['Markup', 'Script', 'Style', 'Documentation'],
-	'results': {
-		'Documentation': {
-			'use': 'buffer'
-		},
-		'Markup': {
-			'use': 'buffer'
-		},
-		'Script': {
-			'use': 'demoSource'
-		},
-		'Style': {
-			'use': 'source'
-		}
-	}
-=======
 module.exports = {
 	fullScreenPatterns: [
 		'globals'
@@ -74,5 +35,4 @@ module.exports = {
 		}
 	},
 	title: 'patternplate UI'
->>>>>>> feat(build): New setup with postcss
 };

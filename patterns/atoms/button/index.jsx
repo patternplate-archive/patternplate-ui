@@ -27,8 +27,17 @@ export class Button extends React.Component {
 	// 	href: (this.props.component === 'a') ? '#' : undefined
 	// };
 
-	render () {
-		const iconOnly = (this.props.icon || this.props.iconLeft || this.props.iconRight ) && !this.props.text && !this.props.children;
+	render() {
+		return (
+			<button>
+				Foo
+			</button>
+		);
+		/* const iconOnly = (
+			this.props.icon ||
+			this.props.iconLeft ||
+			this.props.iconRight) && !this.props.text && !this.props.children;
+
 		const cls = classnames(
 			this.props.className,
 			'button',
@@ -43,6 +52,6 @@ export class Button extends React.Component {
 			{ this.props.text && <span className="text">{ this.props.text }</span> }
 			{ this.props.iconRight && (typeof this.props.iconRight === 'string' ? <Icon name={ this.props.iconRight } /> : this.props.iconRight) }
 			{ this.props.children }
-		</Component>
+		</Component> */
 	}
 }

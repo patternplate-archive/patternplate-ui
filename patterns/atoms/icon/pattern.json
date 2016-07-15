@@ -3,6 +3,6 @@
 	"displayName": "Icon",
 	"version": "0.1.0",
 	"patterns": {
-		"root": "01_globals/root"
+		"root": "globals/root"
 	}
 }
