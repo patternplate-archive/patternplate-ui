@@ -1,3 +1,146 @@
-.default {
-	background: red;
+@import 'root';
+@import 'colors';
+
+:root {
+	--pp-button-size: 40px;
+	--pp-button-border-color: var(--pp-grey-54);
+	--pp-button-highlight-color: var(--pp-blue-100);
+	--pp-button-inverted-color: var(--pp-grey-0);
+	--pp-button-inverted-dimmed-color: var(--pp-grey-6);
+}
+
+.button {
+	position: relative;
+	display: inline-flex;
+	min-width: var(--pp-button-size);
+	min-height: var(--pp-button-size);
+	appearance: none;
+	background: transparent;
+	border: 1px solid var(--pp-button-border-color);
+	border-radius: 0;
+	font-size: 16px;
+	transition-duration: 0.25s;
+	transition-property: border-color, background-color, color, outline-color, text-shadow;
+	transition-timing-function: ease-in-out;
+	outline: 1px solid rgba(255, 255, 255, 0);
+
+	&:focus {
+		outline: 1px solid rgba(255, 255, 255, 0);
+	}
+
+	@nest &&--primary {
+		position: relative;
+		overflow: hidden;
+		color: var(--pp-button-inverted-color);
+		border-color: var(--pp-button-highlight-color);
+
+		&::before {
+			content: '';
+			position: absolute;
+			z-index: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: var(--pp-button-highlight-color);
+			transition: 0.15s transform ease-in-out;
+		}
+
+		@nest &:focus {
+			outline-color: var(--pp-button-highlight-color);
+		}
+
+		@nest &:hover {
+			color: var(--pp-button-highlight-color);
+			border-color: var(--pp-button-highlight-color);
+			&::before {
+				transform: translate(0, -100%);
+			}
+		}
+
+		@nest &:active {
+			color: var(--pp-button-highlight-color);
+			border-color: var(--pp-button-highlight-color);
+			&::before {
+				transform: translate(0, -100%);
+			}
+		}
+
+		@nest &.button--inverted {
+			color: var(--pp-button-inverted-color);
+			background: var(--pp-button-inverted-color);
+			border-color: var(--pp-button-inverted-color);
+
+			@nest &:focus {
+				outline-color: var(--pp-button-inverted-color);
+			}
+
+			@nest &:hover {
+				color: var(--pp-button-highlight-color);
+			}
+
+			@nest &:active {
+				color: var(--pp-button-highlight-color);
+			}
+		}
+	}
+
+	@nest &&--secondary {
+		color: var(--pp-button-border-color);
+		border-color: var(--pp-button-border-color);
+
+		@nest &:focus {
+			outline-color: var(--pp-button-border-color);
+		}
+
+		@nest &:hover {
+			color: var(--pp-button-highlight-color);
+			border-color: var(--pp-button-highlight-color);
+
+			@nest &:focus {
+				outline-color: var(--pp-button-highlight-color);
+			}
+		}
+
+		@nest &:active {
+			color: var(--pp-button-highlight-color);
+			border-color: var(--pp-button-highlight-color);
+
+			@nest &:focus {
+				outline-color: var(--pp-button-highlight-color);
+			}
+		}
+
+		@nest &&.button--inverted {
+			color: var(--pp-button-inverted-color);
+			border-color: var(--pp-button-inverted-color);
+
+			@nest &:focus {
+				outline-color: var(--pp-button-inverted-color);
+			}
+
+			@nest &:hover {
+				color: var(--pp-button-inverted-dimmed-color);
+				border-color: var(--pp-button-inverted-dimmed-color);
+
+				@nest &:focus {
+					outline-color: var(--pp-button-inverted-dimmed-color);
+				}
+			}
+
+			@nest &:active {
+				color: var(--pp-button-inverted-dimmed-color);
+				border-color: var(--pp-button-inverted-dimmed-color);
+
+				@nest &:focus {
+					outline-color: var(--pp-button-inverted-dimmed-color);
+				}
+			}
+		}
+	}
+
+	@nest &__container {
+		position: relative;
+		z-index: 1;
+	}
 }

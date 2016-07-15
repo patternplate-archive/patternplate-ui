@@ -2,8 +2,10 @@
 	"name": "button",
 	"displayName": "Button",
 	"version": "0.1.0",
+	"flag": "alpha",
 	"patterns": {
 		"root": "globals/root",
+		"colors": "globals/colors",
 		"icon": "atoms/icon"
 	}
 }

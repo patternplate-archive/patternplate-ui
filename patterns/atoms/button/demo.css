@@ -1,16 +1,20 @@
 @import 'Pattern';
 
-table {
-	width: 100%;
-	border-collapse: collapse;
+.pp-demo {
+	display: flex;
+	padding: 20px;
 
-	td, th {
-		text-align: left;
-		padding: 8px 12px;
+	@nest &__container {
+		padding: 20px;
+		min-width: 150px;
+		background: var(--pp-grey-6);
+
+		@nest &&--inverted {
+			background: var(--pp-blue-100);
+		}
 	}
 
-	th {
-		padding-top: 20px;
-		font-weight: normal;
+	@nest & > .button {
+		margin-right: 10px;
 	}
 }
