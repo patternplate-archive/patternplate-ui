@@ -1,0 +1,99 @@
+@import 'Pattern';
+
+body {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	@apply --grid-wrapper;
+	list-style: none;
+}
+
+.col {
+	padding: 20px;
+	margin-bottom: var(--grid-vertical-gutter);
+	border: 1px solid red;
+}
+
+/* Desktop */
+.grid__col-l--1 {
+	@apply --grid-col-l-1;
+}
+.grid__col-l--2 {
+	@apply --grid-col-l-2;
+}
+.grid__col-l--3 {
+	@apply --grid-col-l-3;
+}
+.grid__col-l--4 {
+	@apply --grid-col-l-4;
+}
+.grid__col-l--5 {
+	@apply --grid-col-l-5;
+}
+.grid__col-l--6 {
+	@apply --grid-col-l-6;
+}
+.grid__col-l--7 {
+	@apply --grid-col-l-7;
+}
+.grid__col-l--8 {
+	@apply --grid-col-l-8;
+}
+.grid__col-l--9 {
+	@apply --grid-col-l-9;
+}
+.grid__col-l--10 {
+	@apply --grid-col-l-10;
+}
+.grid__col-l--11 {
+	@apply --grid-col-l-11;
+}
+.grid__col-l--12 {
+	@apply --grid-col-l-12;
+}
+
+/* Tablet */
+.grid__col-m--1 {
+	@apply --grid-col-m-1;
+}
+.grid__col-m--2 {
+	@apply --grid-col-m-2;
+}
+.grid__col-m--3 {
+	@apply --grid-col-m-3;
+}
+.grid__col-m--4 {
+	@apply --grid-col-m-4;
+}
+.grid__col-m--5 {
+	@apply --grid-col-m-5;
+}
+.grid__col-m--6 {
+	@apply --grid-col-m-6;
+}
+.grid__col-m--7 {
+	@apply --grid-col-m-7;
+}
+.grid__col-m--8 {
+	@apply --grid-col-m-8;
+}
+
+/* Mobile */
+.grid__col-s--1 {
+	@apply --grid-col-s-1;
+}
+.grid__col-s--2 {
+	@apply --grid-col-s-2;
+}
+.grid__col-s--3 {
+	@apply --grid-col-s-3;
+}
+.grid__col-s--4 {
+	@apply --grid-col-s-4;
+}

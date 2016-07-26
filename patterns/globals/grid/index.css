@@ -1,0 +1,123 @@
+@import 'spacings';
+
+:root {
+	--grid-column-width-l: calc(100% / 12);
+	--grid-column-width-m: calc(100% / 8);
+	--grid-column-width-s: calc(100% / 4);
+
+	--grid-double-gutter-width: calc(var(--grid-gutter-width) * 2);
+
+	--grid-wrapper: {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	--grid-col: {
+		margin-left: var(--grid-gutter-width);
+		margin-right: var(--grid-gutter-width);
+		flex-shrink: 0;
+		flex-grow: 0;
+		flex-basis: auto;
+	}
+
+	/* Desktop */
+	--grid-col-l-1: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) - var(--grid-double-gutter-width));
+	}
+	--grid-col-l-2: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) * 2 - var(--grid-double-gutter-width));
+	}
+	--grid-col-l-3: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) * 3 - var(--grid-double-gutter-width));
+	}
+	--grid-col-l-4: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) * 4 - var(--grid-double-gutter-width));
+	}
+	--grid-col-l-5: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) * 5 - var(--grid-double-gutter-width));
+	}
+	--grid-col-l-6: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) * 6 - var(--grid-double-gutter-width));
+	}
+	--grid-col-l-7: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) * 7 - var(--grid-double-gutter-width));
+	}
+	--grid-col-l-8: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) * 8 - var(--grid-double-gutter-width));
+	}
+	--grid-col-l-9: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) * 9 - var(--grid-double-gutter-width));
+	}
+	--grid-col-l-10: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) * 10 - var(--grid-double-gutter-width));
+	}
+	--grid-col-l-11: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) * 11 - var(--grid-double-gutter-width));
+	}
+	--grid-col-l-12: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-l) * 12 - var(--grid-double-gutter-width));
+	}
+
+	/* Tablet */
+	--grid-col-m-1: {
+		@apply --grid-col;
+		width: var(--grid-column-width-m - var(--grid-double-gutter-width));
+	}
+	--grid-col-m-2: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-m) * 2 - var(--grid-double-gutter-width));
+	}
+	--grid-col-m-3: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-m) * 3 - var(--grid-double-gutter-width));
+	}
+	--grid-col-m-4: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-m) * 4 - var(--grid-double-gutter-width));
+	}
+	--grid-col-m-5: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-m) * 5 - var(--grid-double-gutter-width));
+	}
+	--grid-col-m-6: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-m) * 6 - var(--grid-double-gutter-width));
+	}
+	--grid-col-m-7: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-m) * 7 - var(--grid-double-gutter-width));
+	}
+	--grid-col-m-8: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-m) * 8 - var(--grid-double-gutter-width));
+	}
+
+	/* Mobile */
+	--grid-col-s-1: {
+		@apply --grid-col;
+		width: var(--grid-column-width-s - var(--grid-double-gutter-width));
+	}
+	--grid-col-s-2: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-s) * 2 - var(--grid-double-gutter-width));
+	}
+	--grid-col-s-3: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-s) * 3 - var(--grid-double-gutter-width));
+	}
+	--grid-col-s-4: {
+		@apply --grid-col;
+		width: calc(var(--grid-column-width-s) * 4 - var(--grid-double-gutter-width));
+	}
+}
