@@ -1,8 +1,13 @@
 {
 	"name": "grid",
+	"displayName": "Grid",
 	"version": "0.1.0",
-	"tags": ["landingspage"],
+	"tags": [
+		"definition",
+		"landingspage"
+	],
 	"patterns": {
+		"colors": "globals/colors",
 		"spacings": "globals/spacings"
 	}
 }

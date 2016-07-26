@@ -5,7 +5,7 @@
 	"patterns": {
 		"colors": "globals/colors",
 		"fonts": "globals/fonts",
-		"grid": "globals/spacing"
+		"grid": "globals/grid"
 	},
 	"tags": ["definition"]
 }
