@@ -1,6 +1,7 @@
 @import 'normalize.css';
 @import 'colors';
 @import 'fonts';
+@import 'grid';
 
 :root {
 }

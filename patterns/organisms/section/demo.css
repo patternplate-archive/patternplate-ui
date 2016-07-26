@@ -1,0 +1,6 @@
+@import 'Pattern';
+
+.section {
+	@apply --grid-wrapper;
+	min-height: 100px;
+}
