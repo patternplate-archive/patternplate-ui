@@ -1,0 +1,8 @@
+{
+	"name": "grid",
+	"version": "0.1.0",
+	"tags": ["landingspage"],
+	"patterns": {
+		"spacings": "globals/spacings"
+	}
+}
