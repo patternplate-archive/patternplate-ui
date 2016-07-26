@@ -1,0 +1,11 @@
+{
+	"name": "home-stage",
+	"displayName": "Home Stage",
+	"version": "0.1.0",
+	"patterns": {
+		"root": "globals/root",
+		"headline": "atoms/headline",
+		"logo": "atoms/logo",
+		"section": "organisms/section"
+	}
+}
