@@ -3,14 +3,14 @@
 /**
  * Primary Colors
  */
-.pp-gray-0 {
-	background-color: var(--pp-gray-0);
+.pp-grey-0 {
+	background-color: var(--pp-grey-0);
 }
-.pp-gray-6 {
-	background-color: var(--pp-gray-6);
+.pp-grey-6 {
+	background-color: var(--pp-grey-6);
 }
-.pp-gray-54 {
-	background-color: var(--pp-gray-54);
+.pp-grey-54 {
+	background-color: var(--pp-grey-54);
 }
 .pp-blue-25 {
 	background-color: var(--pp-blue-25);
