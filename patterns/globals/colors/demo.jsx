@@ -11,9 +11,8 @@ import Pattern from 'Pattern';
 
 	<h2 className="pp-h2">Primary Colors Gray</h2>
 	<ul className="pp-colorlist">
-		<Pattern className="pp-colorswatch" color="pp-white"/>
-		<Pattern className="pp-colorswatch" color="pp-gray-light"/>
-		<Pattern className="pp-colorswatch" color="pp-gray-medium"/>
-		<Pattern className="pp-colorswatch" color="pp-gray-dark"/>
+		<Pattern className="pp-colorswatch" color="pp-grey-0"/>
+		<Pattern className="pp-colorswatch" color="pp-grey-6"/>
+		<Pattern className="pp-colorswatch" color="pp-grey-54"/>
 	</ul>
 </div>
