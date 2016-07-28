@@ -1,0 +1,5 @@
+@import 'root';
+
+.logo {
+	fill: var(--pp-grey-0);
+}

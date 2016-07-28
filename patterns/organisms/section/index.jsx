@@ -1,7 +1,7 @@
 import React, {PropTypes} from 'react';
 import joinClassnames from 'classnames';
 
-const Section = function (props = {}) {
+const Section = (props = {}) => {
 	const Component = props.tagName;
 	const componentClassName = 'section';
 	const className = joinClassnames(
