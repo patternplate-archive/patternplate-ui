@@ -1,0 +1,8 @@
+{
+	"name": "headline",
+	"displayName": "Headline",
+	"version": "0.1.0",
+	"patterns": {
+		"root": "globals/root"
+	}
+}
