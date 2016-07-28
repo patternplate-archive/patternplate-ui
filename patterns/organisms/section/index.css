@@ -4,12 +4,12 @@
 	@apply --grid-wrapper;
 	padding: var(--grid-vertical-gutter) 0;
 	&--default {
-		background-color: var(--pp-white);
+		background-color: var(--pp-grey-0);
 	}
 	&--highlight {
 		background-color: var(--pp-highlight-color);
 	}
 	&--secondary {
-		background-color: var(--pp-gray-light);
+		background-color: var(--pp-grey-6);
 	}
 }

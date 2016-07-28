@@ -4,7 +4,8 @@
 	"version": "0.1.0",
 	"patterns": {
 		"colors": "globals/colors",
-		"fonts": "globals/fonts"
+		"fonts": "globals/fonts",
+		"grid": "globals/grid"
 	},
 	"tags": ["definition"]
 }

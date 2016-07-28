@@ -40,4 +40,4 @@ In Fällen, in denen ein Button zur Bestätigung einer Eingabe benutzt wird, kan
 
 ## 1.0.0
 
-* change `:hover` state of `bright` button (dark-blue text instead of light-gray background)
+* change `:hover` state of `bright` button (dark-blue text instead of light-grey background)
