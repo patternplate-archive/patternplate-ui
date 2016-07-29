@@ -1,5 +1,5 @@
 import React, {Component, PropTypes as t} from 'react';
-import joinClassnames from 'classnames';
+import join from 'classnames';
 
 export default class Button extends Component {
 	static className = 'button';
@@ -30,7 +30,7 @@ export default class Button extends Component {
 			type
 		} = this.props;
 
-		const className = joinClassnames(
+		const className = join(
 			Button.className,
 			`${Button.className}--${order}`,
 			{
