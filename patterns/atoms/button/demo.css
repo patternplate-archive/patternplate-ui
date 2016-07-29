@@ -4,17 +4,17 @@
 	display: flex;
 	padding: 20px;
 
-	@nest &__container {
+	&__container {
 		padding: 20px;
 		min-width: 150px;
 		background: var(--pp-grey-6);
 
-		@nest &&--inverted {
+		&&--inverted {
 			background: var(--pp-blue-100);
 		}
 	}
 
-	@nest & > .button {
+	& > .button {
 		margin-right: 10px;
 	}
 }

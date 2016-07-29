@@ -23,12 +23,13 @@
 	transition-property: border-color, background-color, color, outline-color, text-shadow;
 	transition-timing-function: ease-in-out;
 	outline: 1px solid rgba(255, 255, 255, 0);
+	user-select: none;
 
 	&:focus {
 		outline: 1px solid rgba(255, 255, 255, 0);
 	}
 
-	@nest &&--primary {
+	&&--primary {
 		position: relative;
 		overflow: hidden;
 		color: var(--pp-button-inverted-color);
@@ -46,11 +47,12 @@
 			transition: 0.15s transform ease-in-out;
 		}
 
-		@nest &:focus {
+		&:focus {
 			outline-color: var(--pp-button-highlight-color);
 		}
 
-		@nest &:hover {
+		&:active,
+		&:hover {
 			color: var(--pp-button-highlight-color);
 			border-color: var(--pp-button-highlight-color);
 			&::before {
@@ -58,88 +60,61 @@
 			}
 		}
 
-		@nest &:active {
-			color: var(--pp-button-highlight-color);
-			border-color: var(--pp-button-highlight-color);
-			&::before {
-				transform: translate(0, -100%);
-			}
-		}
-
-		@nest &.button--inverted {
+		&.button--inverted {
 			color: var(--pp-button-inverted-color);
 			background: var(--pp-button-inverted-color);
 			border-color: var(--pp-button-inverted-color);
 
-			@nest &:focus {
+			&:focus {
 				outline-color: var(--pp-button-inverted-color);
 			}
 
-			@nest &:hover {
-				color: var(--pp-button-highlight-color);
-			}
-
-			@nest &:active {
+			&:active,
+			&:hover {
 				color: var(--pp-button-highlight-color);
 			}
 		}
 	}
 
-	@nest &&--secondary {
+	&&--secondary {
 		color: var(--pp-button-border-color);
 		border-color: var(--pp-button-border-color);
 
-		@nest &:focus {
+		&:focus {
 			outline-color: var(--pp-button-border-color);
 		}
 
-		@nest &:hover {
+		&:active,
+		&:hover {
 			color: var(--pp-button-highlight-color);
 			border-color: var(--pp-button-highlight-color);
 
-			@nest &:focus {
+			&:focus {
 				outline-color: var(--pp-button-highlight-color);
 			}
 		}
 
-		@nest &:active {
-			color: var(--pp-button-highlight-color);
-			border-color: var(--pp-button-highlight-color);
-
-			@nest &:focus {
-				outline-color: var(--pp-button-highlight-color);
-			}
-		}
-
-		@nest &&.button--inverted {
+		&&.button--inverted {
 			color: var(--pp-button-inverted-color);
 			border-color: var(--pp-button-inverted-color);
 
-			@nest &:focus {
+			&:focus {
 				outline-color: var(--pp-button-inverted-color);
 			}
 
-			@nest &:hover {
+			&:active,
+			&:hover {
 				color: var(--pp-button-inverted-dimmed-color);
 				border-color: var(--pp-button-inverted-dimmed-color);
 
-				@nest &:focus {
-					outline-color: var(--pp-button-inverted-dimmed-color);
-				}
-			}
-
-			@nest &:active {
-				color: var(--pp-button-inverted-dimmed-color);
-				border-color: var(--pp-button-inverted-dimmed-color);
-
-				@nest &:focus {
+				&:focus {
 					outline-color: var(--pp-button-inverted-dimmed-color);
 				}
 			}
 		}
 	}
 
-	@nest &__container {
+	&__container {
 		position: relative;
 		z-index: 1;
 	}
