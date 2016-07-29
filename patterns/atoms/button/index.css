@@ -29,7 +29,7 @@
 		outline: 1px solid rgba(255, 255, 255, 0);
 	}
 
-	&&--primary {
+	@nest &&--primary {
 		position: relative;
 		overflow: hidden;
 		color: var(--pp-button-inverted-color);
@@ -61,22 +61,19 @@
 		}
 
 		&.button--inverted {
-			color: var(--pp-button-inverted-color);
-			background: var(--pp-button-inverted-color);
+			color: var(--pp-button-highlight-color);
 			border-color: var(--pp-button-inverted-color);
-
-			&:focus {
-				outline-color: var(--pp-button-inverted-color);
+			&::before {
+				background: var(--pp-button-inverted-color);
 			}
-
 			&:active,
 			&:hover {
-				color: var(--pp-button-highlight-color);
+				color: var(--pp-button-inverted-color);
 			}
 		}
 	}
 
-	&&--secondary {
+	@nest &&--secondary {
 		color: var(--pp-button-border-color);
 		border-color: var(--pp-button-border-color);
 
