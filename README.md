@@ -35,8 +35,7 @@ This is the home of Patternplates next UI elements. The idea is a recursive stra
 
 ## Design status
 
-![](layouts/design/pattern_20150819.png)
-
+![](layouts/design/pattern_20160412.png)
 
 ## UI Ideas
 
