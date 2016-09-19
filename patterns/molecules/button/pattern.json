@@ -1,0 +1,8 @@
+{
+  "name": "button",
+  "displayName": "Button",
+  "version": "1.0.0",
+  "patterns": {
+    "icon": "atoms/icon"
+  }
+}
