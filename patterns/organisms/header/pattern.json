@@ -1,7 +1,0 @@
-{
-	"name": "header",
-	"displayName": "Header",
-	"patterns": {
-		"root": "globals/root"
-	}
-}

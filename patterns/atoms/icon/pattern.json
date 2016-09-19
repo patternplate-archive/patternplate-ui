@@ -1,8 +1,5 @@
 {
-	"name": "icon",
-	"displayName": "Icon",
-	"version": "0.1.0",
-	"patterns": {
-		"root": "globals/root"
-	}
+  "name": "icon",
+  "displayName": "Icon",
+  "version": "1.0.0"
 }

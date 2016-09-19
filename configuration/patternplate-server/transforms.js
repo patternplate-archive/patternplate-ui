@@ -26,25 +26,10 @@ module.exports = {
 		inFormat: 'css',
 		outFormat: 'css',
 		plugins: {
-			'postcss-apply': {
-				order: 1
-			},
-			'postcss-nested': {
-				order: 2
-			},
-			'postcss-custom-properties': {
-				order: 3
-			},
-			'postcss-strip-units': {
-				order: 4
-			},
 			'postcss-cssnext': {
-				order: 5,
+				order: 1,
 				options: {
-					browsers: 'last 2 versions, not ie < 10',
-					features: {
-						customProperties: false
-					}
+					browsers: 'last 2 versions, not ie < 10'
 				}
 			}
 		}
