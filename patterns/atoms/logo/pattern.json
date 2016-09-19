@@ -1,8 +1,0 @@
-{
-	"name": "logo",
-	"displayName": "Logo",
-	"version": "0.1.0",
-	"patterns": {
-		"root": "globals/root"
-	}
-}

@@ -1,6 +1,0 @@
-@import 'Pattern';
-
-.base-font {
-	@apply --base-font;
-	@apply --simple-ligatures;
-}
