@@ -13,7 +13,7 @@
     "patternplate-server": "0.x",
     "patternplate-transform-postcss": "0.x",
     "patternplate-transform-react-mount": "0.x",
-    "patternplate-transform-react-to-markup": "0.x",
+    "patternplate-transform-react-to-markup": "^0.3.5",
     "postcss": "5.x",
     "postcss-cssnext": "2.x",
     "postcss-import": "8.x",
