@@ -1,28 +1,31 @@
-const pkg = require('../../package.json');
+const babel = require('./babel');
 
 module.exports = {
-	browserify: {
+	'babel': {
+		inFormat: 'js',
+		outFormat: 'js',
+		recursive: true,
+		opts: babel
+	},
+	'browserify': {
+		inFormat: 'js',
+		outFormat: 'js',
 		transforms: {
 			babelify: {
-				opts: {
-					stage: 0,
-					optional: ['runtime']
-				}
+				enabled: true,
+				opts: babel
 			}
 		}
 	},
-	react: {
-		opts: {
-			stage: 0
-		}
+	'react': {
+		inFormat: 'jsx',
+		outFormat: 'js'
 	},
 	'react-to-markup': {
-		opts: {
-			stage: 0,
-			automount: false
-		}
+		inFormat: 'js',
+		outFormat: 'html'
 	},
-	postcss: {
+	'postcss': {
 		inFormat: 'css',
 		outFormat: 'css',
 		plugins: {

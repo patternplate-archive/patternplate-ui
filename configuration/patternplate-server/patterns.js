@@ -1,17 +1,13 @@
 module.exports = {
 	formats: {
 		css: {
-			transforms: ['postcss'],
-			importStatement: localName => {
-				return `@import "${localName}";`;
-			},
-			build: true
-		},
-		less: {
-			build: false
+			transforms: ['postcss']
 		},
 		js: {
-			build: false
+			transforms: ['browserify']
+		},
+		jsx: {
+			transforms: ['react', 'babel', 'react-to-markup']
 		}
 	}
 };
