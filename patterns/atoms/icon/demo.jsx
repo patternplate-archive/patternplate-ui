@@ -1,4 +1,6 @@
 import React from 'react';
-import Pattern from 'Pattern';
+import Icon, {symbols} from 'Pattern';
 
-<Pattern symbol="issue"/>
+<div>
+	{symbols.map(symbol => <Icon key={symbol} symbol={symbol}/>)}
+</div>

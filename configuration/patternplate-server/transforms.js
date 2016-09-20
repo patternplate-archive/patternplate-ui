@@ -10,6 +10,9 @@ module.exports = {
 	'browserify': {
 		inFormat: 'js',
 		outFormat: 'js',
+		opts: {
+			debug: true
+		},
 		transforms: {
 			babelify: {
 				enabled: true,
@@ -21,9 +24,16 @@ module.exports = {
 		inFormat: 'jsx',
 		outFormat: 'js'
 	},
+	'react-mount': {
+		inFormat: 'js',
+		outFormat: 'js'
+	},
 	'react-to-markup': {
 		inFormat: 'js',
-		outFormat: 'html'
+		outFormat: 'html',
+		opts: {
+			automount: true
+		}
 	},
 	'postcss': {
 		inFormat: 'css',
