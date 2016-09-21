@@ -18,7 +18,7 @@
     "classnames": "2.x",
     "eslint-plugin-react": "6.2.2",
     "normalize.css": "4.2.0",
-    "patternplate": "1.0.0-beta3",
+    "patternplate": "1.0.0",
     "patternplate-transform-babel": "1.0.0",
     "patternplate-transform-browserify": "1.0.1",
     "patternplate-transform-postcss": "0.1.4",
