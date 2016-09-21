@@ -135,8 +135,8 @@ function checkers(inverted) {
 			}
 
 			return rect({
-				x: offset + x * dim,
-				y: offset + y * dim,
+				x: offset + (x * dim),
+				y: offset + (y * dim),
 				width: dim,
 				height: dim
 			});
@@ -166,9 +166,8 @@ function joinPaths(paths) {
 	}];
 }
 
-
-
 const iconNames = Object.keys(icons);
+export const symbols = iconNames;
 
 export default withSideEffect(toState, onChange)(Icon);
 
@@ -194,6 +193,7 @@ function getRegistryMountPoint() {
 
 	const created = document.createElement('div');
 	created.setAttribute('data-icon-registry', true);
+	console.log(created);
 	document.body.appendChild(created);
 	return created;
 }
@@ -209,11 +209,11 @@ function Icon(props) {
 	return (
 		<div className={className} style={props.style}>
 			<div className="svg-icon">
-			{
-				<svg className="svg">
-					<use xlinkHref={xlinkHref}/>
-				</svg>
-			}
+				{
+					<svg className="svg">
+						<use xlinkHref={xlinkHref}/>
+					</svg>
+				}
 			</div>
 			<div className="svg-text" style={textStyle}>
 				{props.children}
