@@ -6,14 +6,14 @@ import Icon from 'icon';
 
 export default function Button(props) {
 	const baseClassName = join('button', props.className);
-	const iconClassName = `{baseClassName}__icon`;
+	const iconClassName = `${baseClassName}__icon`;
 	return (
 		<Link
 			className={baseClassName}
 			title={props.title}
 		>
 			<Icon
-				symbol={props.icon}
+				symbol={props.symbol}
 				className={iconClassName}
 			/>
 		</Link>
@@ -21,7 +21,7 @@ export default function Button(props) {
 }
 
 Button.propTypes = {
-	title: t.string,
-	icon: t.string,
+	title: t.string.isRequired,
+	symbol: t.string.isRequired,
 	className: t.string
 };

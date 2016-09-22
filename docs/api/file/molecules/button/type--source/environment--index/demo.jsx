@@ -1,5 +1,10 @@
 import Button from 'Pattern';
 
 <div>
-	<Button>Button</Button>
+	<Button
+		symbol="reload"
+		title="Reload"
+		>
+		Button
+	</Button>
 </div>

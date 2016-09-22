@@ -193,7 +193,6 @@ function getRegistryMountPoint() {
 
 	const created = document.createElement('div');
 	created.setAttribute('data-icon-registry', true);
-	console.log(created);
 	document.body.appendChild(created);
 	return created;
 }
