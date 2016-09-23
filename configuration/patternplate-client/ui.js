@@ -21,17 +21,17 @@ module.exports = {
 		modules: {
 			displayName: 'Organisms',
 			order: 4,
-			icon: 'modules'
+			icon: 'atoms'
 		},
 		templates: {
 			displayName: 'Templates',
 			order: 5,
-			icon: 'pages'
+			icon: 'atoms'
 		},
 		pages: {
 			displayName: 'Pages',
 			order: 6,
-			icon: 'pages'
+			icon: 'atoms'
 		}
 	},
 	title: 'patternplate UI'
