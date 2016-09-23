@@ -1,0 +1,18 @@
+:root {
+	/* Base colors */
+	--pp-color__blue--100: #45a5f5;
+	--pp-color__blue--85: #8bc8f9;
+	--pp-color__gray--0: #fff;
+	--pp-color__gray--11: #e4e4e4;
+	--pp-color__gray--73: #444;
+
+	/* Color assignments */
+	--pp-color__primary: var(--pp-color__blue--100);
+	--pp-color__main-background: var(--pp-color__gray--0);
+	--pp-color__main-header-background: var(--pp-color__gray--0);
+	--pp-color__border: var(--pp-color__gray--11);
+	--pp-color__text: var(--pp-color__gray--73);
+
+	/* Shadows */
+	--pp-color__shadow--default: hsla(0, 0%, 0%, 0.15);
+}

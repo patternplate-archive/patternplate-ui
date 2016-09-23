@@ -1,0 +1,7 @@
+{
+	"name": "root",
+	"displayName": "Root",
+	"patterns": {
+		"colors": "globals/colors"
+	}
+}
