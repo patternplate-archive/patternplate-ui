@@ -1,0 +1,8 @@
+{
+	"name": "main-navigation",
+	"displayName": "Main Navigation",
+	"version": "1.0.0",
+	"patterns": {
+		"main-header": "organisms/main-header"
+	}
+}

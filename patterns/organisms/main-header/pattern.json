@@ -1,0 +1,9 @@
+{
+	"name": "main-header",
+	"displayName": "Main Header",
+	"version": "1.0.0",
+	"patterns": {
+		"root": "globals/root",
+		"header-logo": "molecules/header-logo"
+	}
+}
