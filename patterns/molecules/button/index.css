@@ -1,12 +1,13 @@
+@import 'root';
 @import 'icon';
 
 .button {
 	display: inline-block;
 	padding: 4px;
 	background: transparent;
-	color: blue;
+	color: var(--pp-color__primary);
 	vertical-align: middle;
-	border: 1px solid gray;
+	border: 1px solid var(--pp-color__border);
 	cursor: pointer;
 	text-align: center;
 	transition: all 0.2s ease-in-out;

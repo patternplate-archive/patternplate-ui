@@ -5,8 +5,9 @@ import join from 'classnames';
 import Icon from 'icon';
 
 export default function Button(props) {
-	const baseClassName = join('button', props.className);
-	const iconClassName = `${baseClassName}__icon`;
+	const moduleClassName = 'button';
+	const baseClassName = join(moduleClassName, props.className);
+	const iconClassName = `${moduleClassName}__icon`;
 	return (
 		<Link
 			className={baseClassName}
