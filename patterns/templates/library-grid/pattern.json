@@ -1,0 +1,8 @@
+{
+	"name": "template-library",
+	"displayName": "Library Template",
+	"version": "1.0.0",
+	"patterns": {
+		"root": "globals/root"
+	}
+}
