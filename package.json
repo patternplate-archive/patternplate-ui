@@ -17,13 +17,13 @@
     "babelify": "7.3.0",
     "classnames": "2.x",
     "normalize.css": "4.2.0",
-    "patternplate": "1.x",
-    "patternplate-transform-babel": "1.x",
-    "patternplate-transform-browserify": "1.x",
+    "patternplate": "1.0.0",
+    "patternplate-transform-babel": "1.1.0",
+    "patternplate-transform-browserify": "1.0.1",
     "patternplate-transform-postcss": "0.1.4",
-    "patternplate-transform-react": "1.x",
+    "patternplate-transform-react": "1.0.2",
     "patternplate-transform-react-mount": "0.1.2",
-    "patternplate-transform-react-to-markup": "1.x",
+    "patternplate-transform-react-to-markup": "1.0.1",
     "postcss": "5.x",
     "postcss-cssnext": "2.x",
     "postcss-import": "8.x",
@@ -64,8 +64,8 @@
     "eslint-config-xo": "0.x",
     "eslint-config-xo-react": "0.x",
     "eslint-plugin-babel": "3.x",
-    "eslint-plugin-react": "6.x",
+    "eslint-plugin-react": "6.3.0",
     "stylelint": "7.x",
-    "stylelint-config-standard": "13.x"
+    "stylelint-config-standard": "13.0.2"
   }
 }
