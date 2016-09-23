@@ -1,7 +1,7 @@
-import join from 'classnames';
-import {uniq} from 'lodash';
 import React, {PropTypes as t} from 'react';
 import ReactDOM from 'react-dom';
+import join from 'classnames';
+import {uniq} from 'lodash';
 import withSideEffect from 'react-side-effect';
 
 /* eslint-disable max-len */
@@ -198,31 +198,14 @@ function getRegistryMountPoint() {
 }
 
 function Icon(props) {
-	const className = join('icon', props.className, {
-		'icon--has-description': props.description
-	});
-
-	const textStyle = {display: props.fallback ? 'none' : null};
+	const className = join('icon', props.className);
 	const xlinkHref = `#${props.symbol}`;
 
 	return (
 		<div className={className} style={props.style}>
-			<div className="svg-icon">
-				{
-					<svg className="svg">
-						<use xlinkHref={xlinkHref}/>
-					</svg>
-				}
-			</div>
-			<div className="svg-text" style={textStyle}>
-				{props.children}
-			</div>
-			{
-				props.description &&
-					<small className="icon__description">
-						{props.description}
-					</small>
-			}
+			<svg className="svg">
+				<use xlinkHref={xlinkHref}/>
+			</svg>
 		</div>
 	);
 }
@@ -230,14 +213,7 @@ function Icon(props) {
 Icon.propTypes = {
 	symbol: t.oneOf(iconNames).isRequired,
 	className: t.string,
-	fallback: t.bool.isRequired,
-	children: t.any,
-	description: t.string,
 	style: t.object
-};
-
-Icon.defaultProps = {
-	fallback: true
 };
 
 const hiddenStyles = {
