@@ -16,23 +16,21 @@
     "babel-preset-react": "6.11.1",
     "babelify": "7.3.0",
     "classnames": "2.x",
-    "eslint-plugin-react": "6.2.2",
     "normalize.css": "4.2.0",
-    "patternplate": "1.0.0",
-    "patternplate-transform-babel": "1.0.0",
-    "patternplate-transform-browserify": "1.0.1",
+    "patternplate": "1.x",
+    "patternplate-transform-babel": "1.x",
+    "patternplate-transform-browserify": "1.x",
     "patternplate-transform-postcss": "0.1.4",
-    "patternplate-transform-react": "1.0.0",
+    "patternplate-transform-react": "1.x",
     "patternplate-transform-react-mount": "0.1.2",
-    "patternplate-transform-react-to-markup": "1.0.0",
+    "patternplate-transform-react-to-markup": "1.x",
     "postcss": "5.x",
     "postcss-cssnext": "2.x",
     "postcss-import": "8.x",
     "react": "15.x",
     "react-dom": "15.x",
     "react-router": "^2.5.2",
-    "react-side-effect": "^1.0.2",
-    "stylelint-config-standard": "13.0.0"
+    "react-side-effect": "^1.0.2"
   },
   "name": "patternplate-ui",
   "version": "0.1.0",
@@ -66,8 +64,8 @@
     "eslint-config-xo": "0.x",
     "eslint-config-xo-react": "0.x",
     "eslint-plugin-babel": "3.x",
-    "eslint-plugin-react": "5.x",
+    "eslint-plugin-react": "6.x",
     "stylelint": "7.x",
-    "stylelint-config-standard": "11.x"
+    "stylelint-config-standard": "13.x"
   }
 }
