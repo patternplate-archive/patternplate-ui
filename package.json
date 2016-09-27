@@ -21,7 +21,7 @@
     "patternplate-transform-babel": "1.1.0",
     "patternplate-transform-browserify": "1.1.0",
     "patternplate-transform-postcss": "0.1.4",
-    "patternplate-transform-react": "1.0.2",
+    "patternplate-transform-react": "1.1.1",
     "patternplate-transform-react-mount": "0.1.2",
     "patternplate-transform-react-to-markup": "1.0.1",
     "postcss": "5.x",
