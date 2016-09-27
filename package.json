@@ -59,7 +59,7 @@
     "node": ">= 5"
   },
   "devDependencies": {
-    "babel-eslint": "6.x",
+    "babel-eslint": "7.0.0",
     "eslint": "3.x",
     "eslint-config-xo": "0.x",
     "eslint-config-xo-react": "0.x",
