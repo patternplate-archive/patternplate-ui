@@ -29,7 +29,7 @@
     "postcss-import": "8.x",
     "react": "15.x",
     "react-dom": "15.x",
-    "react-router": "^2.5.2",
+    "react-router": "^2.8.1",
     "react-side-effect": "^1.0.2"
   },
   "name": "patternplate-ui",
