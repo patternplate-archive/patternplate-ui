@@ -19,7 +19,7 @@
     "normalize.css": "5.0.0",
     "patternplate": "1.0.7",
     "patternplate-transform-babel": "1.1.1",
-    "patternplate-transform-browserify": "1.1.0",
+    "patternplate-transform-browserify": "1.1.3",
     "patternplate-transform-postcss": "0.1.4",
     "patternplate-transform-react": "1.1.2",
     "patternplate-transform-react-mount": "0.1.2",
