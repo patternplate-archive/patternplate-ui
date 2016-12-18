@@ -66,6 +66,6 @@
     "eslint-plugin-babel": "3.x",
     "eslint-plugin-react": "6.7.1",
     "stylelint": "7.x",
-    "stylelint-config-standard": "14.0.0"
+    "stylelint-config-standard": "15.0.1"
   }
 }
