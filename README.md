@@ -1,5 +1,7 @@
 # Patternplate UI
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sinnerschrader/patternplate-ui.svg)](https://greenkeeper.io/)
+
 This is the home of Patternplates next UI elements. The idea is a recursive strategy by documenting Patternplates UI in itself.
 
 ## Stages
