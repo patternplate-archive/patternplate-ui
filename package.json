@@ -28,7 +28,7 @@
     "postcss-cssnext": "2.x",
     "postcss-import": "8.x",
     "react": "15.x",
-    "react-dom": "15.x",
+    "react-dom": "15.5.3",
     "react-router": "^3.0.0",
     "react-side-effect": "^1.0.2"
   },
