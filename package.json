@@ -25,7 +25,7 @@
     "patternplate-transform-react-mount": "0.1.2",
     "patternplate-transform-react-to-markup": "1.0.2",
     "postcss": "5.x",
-    "postcss-cssnext": "2.x",
+    "postcss-cssnext": "2.11.0",
     "postcss-import": "8.x",
     "react": "15.x",
     "react-dom": "15.x",
