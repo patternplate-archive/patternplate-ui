@@ -17,7 +17,7 @@
     "babelify": "7.3.0",
     "classnames": "2.x",
     "normalize.css": "5.0.0",
-    "patternplate": "1.1.1",
+    "patternplate": "1.6.0",
     "patternplate-transform-babel": "1.1.1",
     "patternplate-transform-browserify": "1.1.4",
     "patternplate-transform-postcss": "0.1.4",
