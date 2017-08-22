@@ -1,7 +1,7 @@
-import React, {PropTypes as t} from 'react';
+import React, { PropTypes as t } from 'react';
 import ReactDOM from 'react-dom';
 import join from 'classnames';
-import {uniq} from 'lodash';
+import { uniq } from 'lodash';
 import withSideEffect from 'react-side-effect';
 
 /* eslint-disable max-len */
@@ -147,7 +147,7 @@ function checkers(inverted) {
 }
 
 function rect(props) {
-	const {width, height, x, y, ...p} = props;
+	const { width, height, x, y, ...p } = props;
 	return {
 		...p,
 		d: `M${x},${y}h${width}v${height}h-${width}z`
@@ -176,7 +176,7 @@ function toState(propsList) {
 		.map(item => item.symbol)
 		.sort();
 	const symbols = uniq(list);
-	return <IconRegistry symbols={symbols}/>;
+	return <IconRegistry symbols={symbols} />;
 }
 
 function onChange(registry) {
@@ -185,7 +185,7 @@ function onChange(registry) {
 }
 
 function getRegistryMountPoint() {
-	const {document} = global;
+	const { document } = global;
 	const found = document.querySelector('[data-icon-registry]');
 	if (found) {
 		return found;
@@ -204,7 +204,7 @@ function Icon(props) {
 	return (
 		<div className={className} style={props.style}>
 			<svg className="svg">
-				<use xlinkHref={xlinkHref}/>
+				<use xlinkHref={xlinkHref} />
 			</svg>
 		</div>
 	);
@@ -232,7 +232,7 @@ function IconRegistry(props) {
 				props.symbols
 					.map(symbol => {
 						const paths = icons[symbol]() || [];
-						return <Symbol id={symbol} key={symbol} definition={paths}/>;
+						return <Symbol id={symbol} key={symbol} definition={paths} />;
 					})
 			}
 		</svg>
@@ -258,7 +258,7 @@ function Symbol(props) {
 			viewBox="0 0 24 24"
 		>
 			{
-				paths.map(path => <Path definition={path} key={path}/>)
+				paths.map(path => <Path definition={path} key={path} />)
 			}
 		</symbol>
 	);
@@ -270,11 +270,11 @@ Symbol.propTypes = {
 };
 
 function Path(props) {
-	const {definition} = props;
-	const def = typeof definition === 'string' ? {d: definition} : definition;
-	const {tagName, ...p} = def;
+	const { definition } = props;
+	const def = typeof definition === 'string' ? { d: definition } : definition;
+	const { tagName, ...p } = def;
 	const Component = tagName || 'path';
-	return <Component {...p}/>;
+	return <Component {...p} />;
 }
 
 Path.propTypes = {

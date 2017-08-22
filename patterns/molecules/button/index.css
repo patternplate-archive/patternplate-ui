@@ -27,6 +27,9 @@
 	&.button--is-active {
 		border-color: currentColor;
 	}
+	&.button--no-border {
+		border: none;
+	}
 	& .button__icon {
 		margin: 0;
 	}

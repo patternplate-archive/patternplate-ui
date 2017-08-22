@@ -1,6 +1,5 @@
-import React from 'react';
 import Icon, {symbols} from 'Pattern';
 
 <div>
-	{symbols.map(symbol => <Icon key={symbol} symbol={symbol}/>)}
+	{symbols.map((symbol, index) => <Icon key={index} symbol={symbol}/>)}
 </div>

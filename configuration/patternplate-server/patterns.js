@@ -3,11 +3,13 @@ module.exports = {
 		css: {
 			transforms: ['postcss']
 		},
-		js: {
-			transforms: ['browserify']
-		},
 		jsx: {
 			transforms: ['react', 'babel', 'react-to-markup']
 		}
+	},
+	mount: {
+		format: ['jsx'],
+		name: 'Components',
+		transforms: ['react', 'babel', 'react-mount', 'browserify']
 	}
 };

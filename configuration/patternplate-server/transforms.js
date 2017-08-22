@@ -1,23 +1,29 @@
-const babel = require('./babel');
+var babelPresets = ['es2015', 'react'];
+var babelPlugins = [
+	'add-module-exports',
+	'transform-decorators-legacy',
+	'transform-class-properties',
+	'transform-es2015-destructuring',
+	'transform-es2015-modules-commonjs',
+	'transform-object-rest-spread'
+];
+
+var babelOpts = {
+	presets: babelPresets,
+	plugins: babelPlugins
+};
 
 module.exports = {
 	'babel': {
-		inFormat: 'js',
+		inFormat: 'jsx',
 		outFormat: 'js',
-		recursive: true,
-		opts: babel
+		opts: babelOpts
 	},
 	'browserify': {
 		inFormat: 'js',
 		outFormat: 'js',
 		opts: {
 			debug: true
-		},
-		transforms: {
-			babelify: {
-				enabled: true,
-				opts: babel
-			}
 		}
 	},
 	'react': {
@@ -28,12 +34,13 @@ module.exports = {
 		inFormat: 'js',
 		outFormat: 'js'
 	},
+	'styled-components': {
+		inFormat: 'js',
+		outFormat: 'js'
+	},
 	'react-to-markup': {
 		inFormat: 'js',
-		outFormat: 'html',
-		opts: {
-			automount: true
-		}
+		outFormat: 'html'
 	},
 	'postcss': {
 		inFormat: 'css',
