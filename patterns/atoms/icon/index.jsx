@@ -1,7 +1,8 @@
-import React, { PropTypes as t } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
-import join from 'classnames';
-import { uniq } from 'lodash';
+import styled from 'styled-components';
+import {uniq} from 'lodash';
 import withSideEffect from 'react-side-effect';
 
 /* eslint-disable max-len */
@@ -147,7 +148,7 @@ function checkers(inverted) {
 }
 
 function rect(props) {
-	const { width, height, x, y, ...p } = props;
+	const {width, height, x, y, ...p} = props;
 	return {
 		...p,
 		d: `M${x},${y}h${width}v${height}h-${width}z`
@@ -185,7 +186,7 @@ function onChange(registry) {
 }
 
 function getRegistryMountPoint() {
-	const { document } = global;
+	const {document} = global;
 	const found = document.querySelector('[data-icon-registry]');
 	if (found) {
 		return found;
@@ -197,55 +198,69 @@ function getRegistryMountPoint() {
 	return created;
 }
 
-function Icon(props) {
-	const className = join('icon', props.className);
-	const xlinkHref = `#${props.symbol}`;
+const SIZES = {
+	s: 15,
+	m: 30,
+	l: 50
+};
 
+function Icon(props) {
 	return (
-		<div className={className} style={props.style}>
-			<svg className="svg">
-				<use xlinkHref={xlinkHref} />
-			</svg>
-		</div>
+		<StyledIcon className={props.className} size={props.size}>
+			<use xlinkHref={`#${props.symbol || 'placeholder'}`}/>
+		</StyledIcon>
 	);
 }
 
 Icon.propTypes = {
-	symbol: t.oneOf(iconNames).isRequired,
-	className: t.string,
-	style: t.object
+	className: PropTypes.string,
+	size: PropTypes.oneOf(['s', 'm', 'l']),
+	symbol: PropTypes.oneOf(iconNames).isRequired
 };
 
-const hiddenStyles = {
-	position: 'fixed',
-	height: 0,
-	width: 0,
-	overflow: 'hidden',
-	padding: 0,
-	visibility: 'hidden'
+Icon.defaultProps = {
+	size: 'm',
+	symbol: 'placeholder'
 };
+
+const StyledIcon = styled.svg`
+	display: flex;
+	width: ${props => SIZES[props.size]}px;
+	height: ${props => SIZES[props.size]}px;
+	justify-content: center;
+	align-items: center;
+`;
 
 function IconRegistry(props) {
 	return (
-		<svg style={hiddenStyles}>
+		<StyledRegistry>
 			{
 				props.symbols
 					.map(symbol => {
 						const paths = icons[symbol]() || [];
-						return <Symbol id={symbol} key={symbol} definition={paths} />;
+						return <Symbol key={symbol} id={symbol} definition={paths} />;
 					})
 			}
-		</svg>
+		</StyledRegistry>
 	);
 }
 
 IconRegistry.propTypes = {
-	symbols: t.arrayOf(t.oneOf(iconNames)).isRequired
+	symbols: PropTypes.arrayOf(PropTypes.oneOf(iconNames)).isRequired
 };
 
 IconRegistry.defaultProps = {
 	symbols: []
 };
+
+const StyledRegistry = styled.svg`
+	position: fixed;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	padding: 0;
+	visibility: hidden;
+`;
 
 function Symbol(props) {
 	const paths = Array.isArray(props.definition) ?
@@ -258,25 +273,25 @@ function Symbol(props) {
 			viewBox="0 0 24 24"
 		>
 			{
-				paths.map(path => <Path definition={path} key={path} />)
+				paths.map(path => <Path key={path} definition={path}/>)
 			}
 		</symbol>
 	);
 }
 
 Symbol.propTypes = {
-	definition: t.oneOfType([t.string, t.object, t.array]).isRequired,
-	id: t.string.isRequired
+	definition: PropTypes.oneOfType([PropTypes.string, PropTypes.object, PropTypes.array]).isRequired,
+	id: PropTypes.string.isRequired
 };
 
 function Path(props) {
-	const { definition } = props;
-	const def = typeof definition === 'string' ? { d: definition } : definition;
-	const { tagName, ...p } = def;
+	const {definition} = props;
+	const def = typeof definition === 'string' ? {d: definition} : definition;
+	const {tagName, ...p} = def;
 	const Component = tagName || 'path';
-	return <Component {...p} />;
+	return <Component {...p}/>;
 }
 
 Path.propTypes = {
-	definition: t.oneOfType([t.string, t.object]).isRequired
+	definition: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired
 };

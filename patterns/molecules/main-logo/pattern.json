@@ -1,6 +1,6 @@
 {
-	"name": "button",
-	"displayName": "Button",
+	"name": "main-logo",
+	"displayName": "Main Logo",
 	"version": "1.0.0",
 	"patterns": {
 		"icon": "atoms/icon"

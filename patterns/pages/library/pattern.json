@@ -3,7 +3,8 @@
 	"displayName": "Library Page",
 	"version": "1.0.0",
 	"patterns": {
-		"library-grid": "templates/library-grid",
+		"themes": "globals/themes",
+		"default-layout": "templates/default-layout",
 		"main-navigation": "organisms/main-navigation"
 	}
 }

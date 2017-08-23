@@ -1,9 +1,0 @@
-@import 'root';
-@import 'header-logo';
-
-.main-header {
-	height: var(--pp-size__top-bar-height);
-	padding: var(--pp-spacing__whitesapce-s);
-	background-color: var(--pp-color__main-header-background);
-	box-shadow: var(--pp-shadow__default--down);
-}

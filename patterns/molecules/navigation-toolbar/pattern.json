@@ -3,7 +3,6 @@
 	"displayName": "Navigation Toolbar",
 	"version": "1.0.0",
 	"patterns": {
-		"root": "globals/root",
 		"button": "molecules/button"
 	}
 }

@@ -3,6 +3,11 @@
 	"displayName": "Main Navigation",
 	"version": "1.0.0",
 	"patterns": {
-		"main-header": "organisms/main-header"
+		"main-logo": "molecules/main-logo",
+		"navigation-toolbar": "molecules/navigation-toolbar",
+		"navigation-tree": "molecules/navigation-tree"
+	},
+	"demoPatterns": {
+		"demo-themer": "globals/demo-themer"
 	}
 }

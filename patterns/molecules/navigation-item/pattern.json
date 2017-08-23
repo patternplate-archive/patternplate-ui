@@ -1,0 +1,8 @@
+{
+	"name": "navigation-item",
+	"displayName": "Navigation Item",
+	"patterns": {
+		"icon": "atoms/icon",
+		"link": "atoms/link"
+	}
+}

@@ -1,28 +1,27 @@
-import React, {PropTypes as t} from 'react';
-import join from 'classnames';
-
-import Button from 'button';
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 export default function NavigationToolbar(props) {
-	const moduleClassName = 'navigation-toolbar';
-	const baseClassName = join(moduleClassName, props.className);
-	const toolListClassName = `${moduleClassName}__tool-list`;
-	// const minimizeButtonClassName = `${moduleClassName}__minimize-button`;
-
 	return (
-		<div className={baseClassName}>
-			<ul className={toolListClassName}>
-				{props.tools}
-			</ul>
-			<Button
-				symbol="arrow-double-left"
-				layout="no-border"
-			/>
-		</div>
+		<StyledNavigationToolbar>
+			{props.children}
+		</StyledNavigationToolbar>
 	);
 }
 
 NavigationToolbar.propTypes = {
-	className: t.string,
-	tools: t.arrayOf(t.node)
+	children: PropTypes.arrayOf(PropTypes.element)
 };
+
+NavigationToolbar.defaultProps = {
+	children: []
+};
+
+const StyledNavigationToolbar = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 40px;
+	padding: 10px 15px;
+`;

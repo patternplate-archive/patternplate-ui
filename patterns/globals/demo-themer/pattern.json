@@ -1,0 +1,9 @@
+{
+	"name": "demo-themer",
+	"displayName": "Demo Themer",
+	"patterns": {
+		"themes": "globals/themes"
+	},
+	"build": false,
+	"display": false
+}

@@ -1,6 +1,0 @@
-@import 'main-header';
-
-.main-navigation {
-	border: 0 solid var(--pp-color__border);
-	border-right-width: 1px;
-}
