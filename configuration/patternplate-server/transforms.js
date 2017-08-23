@@ -41,17 +41,5 @@ module.exports = {
 	'react-to-markup': {
 		inFormat: 'js',
 		outFormat: 'html'
-	},
-	'postcss': {
-		inFormat: 'css',
-		outFormat: 'css',
-		plugins: {
-			'postcss-cssnext': {
-				order: 1,
-				options: {
-					browsers: 'last 2 versions, not ie < 10'
-				}
-			}
-		}
 	}
 };
