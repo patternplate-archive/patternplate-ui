@@ -1,6 +1,6 @@
+import React from 'react';
 import Pattern from 'Pattern';
 import styled from 'styled-components';
-import React from 'react';
 
 const Dummy = styled.div`
 	width: 30px;
@@ -8,6 +8,9 @@ const Dummy = styled.div`
 	background-color: #ccc;
 `;
 
-const tools = [Dummy, Dummy, Dummy];
+const tools = [];
+for (let index = 0; index < 3; index++) {
+	tools.push(<Dummy key={index}/>);
+}
 
-<Pattern tools={tools}/>
+<Pattern>{tools}</Pattern>

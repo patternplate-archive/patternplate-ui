@@ -1,3 +1,4 @@
+import React from 'react';
 import Pattern from 'Pattern';
 import Themer from 'demo-themer';
 import styled from 'styled-components';
@@ -156,7 +157,10 @@ const Dummy = styled.div`
 	background-color: #ccc;
 `;
 
-const tools = [<Dummy/>, <Dummy/>, <Dummy/>];
+const tools = [];
+for (let index = 0; index < 3; index++) {
+	tools.push(<Dummy key={index}/>);
+}
 
 <Themer>
 	<Pattern
