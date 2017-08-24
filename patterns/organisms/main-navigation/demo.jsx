@@ -1,7 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 import Pattern from 'Pattern';
 import Themer from 'demo-themer';
-import styled from 'styled-components';
+import Button from 'button';
 
 const navigation = {
 	children: [
@@ -157,15 +158,24 @@ const Dummy = styled.div`
 	background-color: #ccc;
 `;
 
-const tools = [];
-for (let index = 0; index < 3; index++) {
-	tools.push(<Dummy key={index}/>);
-}
+const tools = ['react', 'search', 'reload'];
+const toolComponents = tools.map(
+	(item, index) => (
+		<Button
+			key={index}
+			type="link"
+			symbol={item}
+			frameless
+			transparent
+		/>
+	)
+);
 
 <Themer>
 	<Pattern
 		docs={docs}
 		navigation={navigation}
-		tools={tools}
+		tools={toolComponents}
+		applicationTitle="Patternplate"
 	/>
 </Themer>

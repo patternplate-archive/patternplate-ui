@@ -229,6 +229,8 @@ const StyledIcon = styled.svg`
 	height: ${props => SIZES[props.size]}px;
 	justify-content: center;
 	align-items: center;
+	color: inherit;
+	fill: currentColor;
 `;
 
 function IconRegistry(props) {

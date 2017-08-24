@@ -2,7 +2,8 @@
 	"name": "navigation-toolbar",
 	"displayName": "Navigation Toolbar",
 	"version": "1.0.0",
-	"patterns": {
-		"button": "molecules/button"
+	"demoPatterns": {
+		"button": "molecules/button",
+		"demo-themer": "globals/demo-themer"
 	}
 }

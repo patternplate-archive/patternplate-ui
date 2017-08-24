@@ -1,61 +1,88 @@
-import React, {PropTypes as t} from 'react';
-import {Link} from 'react-router';
-import join from 'classnames';
+import React from 'react';
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import Icon from 'icon';
+import Link from 'link';
 
-const buttonTypes = {
-	button: 'button',
-	submit: 'button',
-	link: 'link'
-};
+const buttonTypes = [
+	'button',
+	'submit',
+	'link'
+];
 
-export default function Button(props) {
-	const moduleClassName = 'button';
-	const baseClassName = join(
-		moduleClassName, {
-			[`${moduleClassName}--no-border`]: props.layout === 'no-border'
-		},
-		props.className
+function Button(props) {
+
+	const OuterElement = props.type === 'link' ?
+		<Link/> :
+		<button type={props.type}/>;
+
+	return (
+		<OuterElement.type
+			{...OuterElement.props}
+			className={props.className}
+			title={props.title}
+			onClick={props.onClick}
+			external={props.external}
+			href={props.href}
+		>
+			{props.children &&
+				<span>{props.children}</span>
+			}
+			{
+				props.symbol &&
+					<StyledIcon
+						symbol={props.symbol}
+					/>
+			}
+		</OuterElement.type>
 	);
-	const iconClassName = `${moduleClassName}__icon`;
-	const buttonType = buttonTypes[props.type];
-
-	switch (buttonType) {
-		case 'button':
-			return (<button
-				className={baseClassName}
-				title={props.title}
-			>
-				{props.children}
-				<Icon
-					symbol={props.symbol}
-					className={iconClassName}
-				/>
-			</button>);
-
-		case 'link':
-			return <Link
-				className={baseClassName}
-				title={props.title}
-			>
-				<Icon
-					symbol={props.symbol}
-					className={iconClassName}
-				/>
-			</Link>
-	}
 }
 
 Button.propTypes = {
-	title: t.string.isRequired,
-	symbol: t.string.isRequired,
-	className: t.string,
-	children: t.any,
-	layout: t.oneOf(['no-border']),
-	type: t.oneOf(Object.keys(buttonTypes))
+	title: PropTypes.string.isRequired,
+	symbol: PropTypes.string.isRequired,
+	className: PropTypes.string,
+	children: PropTypes.any,
+	type: PropTypes.oneOf(buttonTypes),
+	href: PropTypes.string,
+	onClick: PropTypes.func,
+	external: PropTypes.bool,
+	frameless: PropTypes.bool,
+	transparent: PropTypes.bool
 };
 
 Button.defaultProps = {
 	type: 'button'
-}
+};
+
+const StyledButton = styled(Button)`
+	appearance: none;
+	display: inline-flex;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	border: none;
+	outline: 0;
+	background: ${props => props.theme.background};
+	color: ${props => props.theme.color};
+	font: inherit;
+	box-sizing: border-box;
+	vertical-align: top;
+	${props => !props.frameless && `
+		padding: 4px;
+		border: 1px solid currentColor;
+	`}
+	${props => props.transparent && `
+		background: transparent;
+	`}
+`;
+
+const StyledIcon = styled(Icon)`
+	&:not(:first-child) {
+		margin-left: 5px;
+	}
+`;
+
+export default StyledButton;

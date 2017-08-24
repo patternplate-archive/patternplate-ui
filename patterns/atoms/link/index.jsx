@@ -20,7 +20,6 @@ export default class Link extends React.Component {
 				className={props.className}
 				href={props.href}
 				onClick={this.handleClick}
-				onMouseOver={props.onHover}
 				title={props.title}
 				data-id={props['data-id']}
 			>

@@ -2,7 +2,7 @@ import React from 'react';
 import getThemes from 'themes';
 import TemplateDefault from 'default-layout';
 import Navigation from 'main-navigation';
-import styled, {ThemeProvider} from 'styled-components';
+import styled, {ThemeProvider, injectGlobal} from 'styled-components';
 
 const themes = getThemes();
 
@@ -142,9 +142,31 @@ for (let index = 0; index < 3; index++) {
 	tools.push(<Dummy key={index}/>);
 }
 
+/* eslint-disable no-unused-expressions */
+injectGlobal`
+	html,
+	body {
+		height: 100%;
+		/* overflow: hidden; */
+		box-sizing: border-box;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	}
+	body {
+		margin: 0;
+		height: 100%;
+	}
+	[data-application] {
+		height: 100%;
+	}
+	*, *::before, *::after {
+		box-sizing: inherit;
+	}
+`;
+/* eslint-enable */
+
 <ThemeProvider theme={themes.dark}>
 	<TemplateDefault
-		sidebar={<Navigation navigation={navigation} docs={navigation} tools={tools}/>}
+		sidebar={<Navigation navigation={navigation} docs={navigation} tools={tools} applicationTitle="Patternplate"/>}
 		navigationEnabled
 	>
 		<p>Hallo Welt!</p>

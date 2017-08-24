@@ -3,11 +3,12 @@
 	"displayName": "Main Navigation",
 	"version": "1.0.0",
 	"patterns": {
-		"main-logo": "molecules/main-logo",
+		"main-header": "molecules/main-header",
 		"navigation-toolbar": "molecules/navigation-toolbar",
 		"navigation-tree": "molecules/navigation-tree"
 	},
 	"demoPatterns": {
-		"demo-themer": "globals/demo-themer"
+		"demo-themer": "globals/demo-themer",
+		"button": "molecules/button"
 	}
 }

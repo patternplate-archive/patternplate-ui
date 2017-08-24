@@ -3,9 +3,10 @@ import color from 'color';
 export default function getThemes(passed) {
 	const bgDark = 'rgba(39, 39, 39, 1)';
 	const bgLight = 'rgba(255, 255, 255, 1)';
+	const main = passed || 'rgba(66, 165, 245, 1)';
 
 	const common = {
-		active: passed || 'rgba(66, 165, 245, 1)',
+		active: main,
 		error: 'rgba(205, 63, 69, 1)', // errors, alpha, deprecated
 		warning: 'rgba(255, 189, 46, 1)', // warnings, beta
 		info: 'rgba(80, 179, 221, 1)', // rc

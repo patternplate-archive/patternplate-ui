@@ -1,0 +1,11 @@
+{
+	"name": "main-header",
+	"displayName": "Main Header",
+	"version": "1.0.0",
+	"patterns": {
+		"icon": "atoms/icon"
+	},
+	"demoPatterns": {
+		"demo-themer": "gloabals/demo-themer"
+	}
+}

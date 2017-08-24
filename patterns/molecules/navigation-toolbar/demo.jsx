@@ -1,6 +1,8 @@
 import React from 'react';
-import Pattern from 'Pattern';
 import styled from 'styled-components';
+import Pattern from 'Pattern';
+import Button from 'button';
+import Themer from 'demo-themer';
 
 const Dummy = styled.div`
 	width: 30px;
@@ -8,9 +10,11 @@ const Dummy = styled.div`
 	background-color: #ccc;
 `;
 
-const tools = [];
-for (let index = 0; index < 3; index++) {
-	tools.push(<Dummy key={index}/>);
-}
+const tools = ['react', 'search', 'reload'];
+const toolComponents = tools.map(
+	(item, index) => <Button key={index} symbol={item}/>
+);
 
-<Pattern>{tools}</Pattern>
+<Themer>
+	<Pattern>{toolComponents}</Pattern>
+</Themer>

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import NavigationTree from 'navigation-tree';
 import NavigationToolbar from 'navigation-toolbar';
-import Logo from 'main-logo';
+import Header from 'main-header';
 
 export default class Navigation extends React.Component {
 	constructor(...args) {
@@ -40,7 +40,10 @@ export default class Navigation extends React.Component {
 		return (
 			<StyledNavigation onKeyDown={this.handleKeyDown}>
 				<StyledNavigationTree innerRef={this.getRef}>
-					<Logo title="" symbol="patternplate"/>
+					<StyledHeader
+						title={props.applicationTitle}
+						symbol="patternplate"
+					/>
 					<Documentation
 						active={props.active}
 						docs={props.docs}
@@ -67,7 +70,8 @@ Navigation.propTypes = {
 	active: PropTypes.string.isRequired,
 	docs: PropTypes.object.isRequired,
 	navigation: PropTypes.object.isRequired,
-	tools: PropTypes.arrayOf(PropTypes.element)
+	tools: PropTypes.arrayOf(PropTypes.element),
+	applicationTitle: PropTypes.string
 };
 
 Navigation.defaultProps = {
@@ -81,6 +85,10 @@ function getPadding(el) {
 		10
 	);
 }
+
+const StyledHeader = styled(Header)`
+	margin-bottom: 10px;
+`;
 
 const StyledNavigation = styled.div`
 	display: flex;

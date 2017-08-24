@@ -3,6 +3,10 @@
 	"displayName": "Button",
 	"version": "1.0.0",
 	"patterns": {
-		"icon": "atoms/icon"
+		"icon": "atoms/icon",
+		"link": "atoms/link"
+	},
+	"demoPatterns": {
+		"demo-themer": "globals/demo-themer"
 	}
 }
