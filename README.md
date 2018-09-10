@@ -1,3 +1,6 @@
+> # ⚠️ Deprecated
+> Use instead: https://patternplate.github.io/ 
+
 # Patternplate UI
 
 This is the home of Patternplates next UI elements. The idea is a recursive strategy by documenting Patternplates UI in itself.
